@@ -7,8 +7,9 @@ export default defineConfig({
   base: './',
   server: {             
     host: '0.0.0.0',	
-    // port: 8080,      
-    open: true
+    port: 8080,      
+    open: true,
+    hot:true,
   },
   resolve:{   
     //别名配置，引用src路径下的东西可以通过@如：import Layout from '@/layout/index.vue'

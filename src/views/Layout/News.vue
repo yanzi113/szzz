@@ -3,23 +3,28 @@
 </script>
 
 <template>
-    <div class="news">
-        <div class="news-page1">新闻资讯</div>
-        <div class="news-page2">。。。</div>
+    <div class="main">
+        <div class="page page1">内容1</div>
+        <div class="page page2">内容2</div>
     </div>
 </template>
 
 <style lang="scss" scoped>
- .news{
-    > .news-page1{
-        width: 1920px;
-        height: 600px;
-        background-color: bisque;
+.main {
+  > .page{
+    height: 980px;
+    width: 1920px;
+    text-align: center;
+    margin-top: -90px;
+    &.page1{
+      background-image: url("@/assets/img/news/第一屏.png");
+      background-size: 100%;
+      height: 600px;
     }
-    > .news-page2{
-        width: 1920px;
-        height: 1993px;
-        background-color: #e41c1c;
+    &.page2{
+        background-color: rgb(4, 10, 26,);
+      height: 1993px;
     }
- }
+  }
+}
 </style>

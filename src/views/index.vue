@@ -13,11 +13,14 @@ import LayoutHeader from "@/components/LayoutHeader.vue";
 import LayoutFooter from "@/components/LayoutFooter.vue";
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .main-view {
   min-width:1920px;
   color: white;
-  background-color: rgb(7, 53, 122);
+  border: 1px solid brown;
+  background-color: transparent;
+  // position: relative;
+  // top: 50px;
 }
 
 </style>
