@@ -7,24 +7,36 @@
       <div class="content-two">
         <div class="content-left">
           <h1>关于我们</h1>
+          <div class="left-button">
+            <button>查看更多</button>
+          </div>
         </div>
         <div class="content-right">
           <div class="content-right-item">
-            <h3>公司成立</h3>
+            <div class="logo-and-head">
+              <svg-icon name="公司成立" />
+              <h3>公司成立</h3>
+            </div>
             <p>
               2023年12月12号在深圳注册成立，立志用人工智能技术生成硬件产品，探寻产品想法到实现的最短路径。通过融合AI技
               术和硬件工程，能够创造出更加智能、高效、灵活的硬件产品，从而在各个领域带来深刻的变革。
             </p>
           </div>
           <div class="content-right-item">
-            <h3>公司创新</h3>
+            <div class="logo-and-head">
+              <svg-icon name="公司创新" />
+              <h3>公司创新</h3>
+            </div>
             <p>
               从根本上解放工程师，使其不再受制于繁琐重复的研发工作，使工程师能够更集中精力于核心创新工作，充分发挥想象
               力和创意潜能，在产品开发过程中贡献独特的思维和创新性的解决方案。
             </p>
           </div>
           <div class="content-right-item">
-            <h3>科技智能</h3>
+            <div class="logo-and-head">
+              <svg-icon name="科技智能" />
+              <h3>科技智能</h3>
+            </div>
             <p>
               快速实现人工智能技术生成硬件产品的创新路径，通过科技创新和高效生产方式，推动产业的升级，实现更智能、可持
               续的生产生态，为未来产业发展创造全新的生产动能。
@@ -37,9 +49,9 @@
       <div class="content-tree">
         <div class="content3-top">
           <h1>产品解决方案</h1>
-          <h6>
+          <p>
             副标题副标题副标题副标题副标题副标题副标题副标题副标题副标题副标题副标题副标题副标题副标
-          </h6>
+          </p>
         </div>
         <div class="content3-middle">
           <div class="content3-middle-item">
@@ -134,7 +146,7 @@
     width: 1920px;
     text-align: center;
     margin-top: -90px;
-
+    margin-bottom: 90px;
     &.page1 {
       background-image: url("@/assets/img/home/第一屏.png");
       background-size: 100%;
@@ -142,35 +154,71 @@
     &.page2 {
       background-image: url("@/assets/img/home/第二屏.png");
       background-size: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
+      position: relative;
       > .content-two {
         width: 1200px;
         height: 491px;
         border: 2px solid rgb(7, 7, 7);
-        display: flex;
         position: absolute;
+        top: 200px;
+        /* bottom: 0; */
+        left: 360px;
 
         > .content-left {
           width: 500px;
+          height: 250px;
+          position: relative;
           > h1 {
+            position: absolute;
             text-align: left;
+            top: 0px;
+            margin-top: 0px !important;
+          }
+          > .left-button {
+            position: absolute;
+            top: 440px;
+            > button {
+              background-image: linear-gradient(
+                to right,
+                rgba(0, 99, 171, 1),
+                rgba(10, 145, 105, 1)
+              ); /* 设置按钮的背景为从红色到绿色的水平线性渐变 */
+              color: white; /* 设置按钮的文本颜色为白色 */
+              padding: 10px 20px; /* 设置按钮的内边距 */
+              border: none; /* 移除按钮的边框 */
+              cursor: pointer; /* 设置鼠标悬停时的光标样式为手型 */
+              width: 176px;
+              height: 48px;
+              font-size: 16px;
+            }
           }
         }
         > .content-right {
+          width: 700px;
+          height: 491px;
           border: 2px solid white;
-          display: flex;
-          flex-wrap: wrap;
-          flex: 0 1 auto;
-          justify-content: flex-start;
-          align-items: flex-start;
+          position: absolute;
+          top: 0px;
+          left: 500px;
           > .content-right-item {
             text-align: left;
-            > p {
-              text-align: left;
-              width: 100%;
+            margin-bottom: 50px;
+            > .logo-and-head {
+              display: flex;
+              flex-direction: row;
+              position: relative;
+              left: -56px;
+              > h3 {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-size: 24px;
+                margin-left: 8px;
+              }
+              > p {
+                text-align: left;
+                width: 100%;
+                // margin-bottom: 80px;
+              }
             }
           }
         }
@@ -179,22 +227,37 @@
     &.page3 {
       background-image: url("@/assets/img/home/第三屏.png");
       background-size: 100%;
-      >.content-tree{
-        margin-top: 30px;
-      > .content3-middle{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        justify-content: space-evenly;
-        gap: 0px;
-        >.content3-middle-item{
-          width: 576px;
-          height: 353px;
-          background-color: rgb(4, 40, 59);
+      position: relative;
+      > .content-tree {
+        position: absolute;
+        top: 160px;
+        left: 360px;
+        > .content3-top {
+          margin-bottom: 92px;
+          >h1{
+            margin-bottom: 40px;
+          }
+
+        }
+        > .content3-middle {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          justify-content: space-around;
+          > .content3-middle-item {
+            width: 576px;
+            height: 353px;
+            margin-right: 35px;
+            background-color: rgb(4, 40, 59, 0.6);
+            > h3,p{
+              text-align: left;
+              margin-left: 48px;
+              margin-top: 48px;
+            }
+          }
         }
       }
-    }
     }
     &.page4 {
       background-image: url("@/assets/img/home/第四屏.png");
@@ -202,12 +265,12 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      >.content-four{
+      > .content-four {
         width: 1200px;
         // 这一句高度不生效
-        height: 554px ;
-        >.content-four-item{
-text-align: left;
+        height: 554px;
+        > .content-four-item {
+          text-align: left;
         }
       }
     }
@@ -216,38 +279,44 @@ text-align: left;
       background-size: 100%;
       display: flex;
       justify-content: center;
-      align-items:center ;
-      >.content-five{
-
-
-      >.content-top{
-        border: 1px solid red;
-      }
-      >.content-middle{
-        margin-top: 100px;
-          border: 1px solid rgb(102, 100, 100);
+      align-items: center;
+      > .content-five {
+        > .content-top {
+          // border: 1px solid red;
+        }
+        > .content-middle {
+          margin-top: 100px;
+          // border: 1px solid rgb(102, 100, 100);
           display: flex;
           flex-direction: row;
           height: 200px;
           height: 368px;
           padding: 20px;
-          >.content-middle-item{
+          > .content-middle-item {
             width: 368px;
             height: 368px;
-            border: 1px solid green;
-            background-color: rgb(3, 30, 48,0.8);
+            // border: 1px solid green;
+            background-color: rgb(3, 30, 48, 0.8);
             text-align: left;
-            >.box-item{
+            margin-left: 15px;
+            margin-right: 15px;
+            > .box-item {
               width: 320px;
               height: 180px;
             }
-            >span{
+            > span {
               margin-bottom: -50px;
             }
           }
+        }
       }
     }
-    }
   }
+}
+.svg-icon[data-v-2c027f07] {
+  width: 48px !important;
+  height: 48px !important;
+  fill: currentColor;
+  /* vertical-align: middle; */
 }
 </style>

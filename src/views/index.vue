@@ -16,6 +16,7 @@ import LayoutFooter from "@/components/LayoutFooter.vue";
 <style lang="scss" scoped>
 .main-view {
   min-width:1920px;
+  height: auto;
   color: white;
   border: 1px solid brown;
   background-color: transparent;

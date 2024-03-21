@@ -7,15 +7,18 @@ const activeIndex = ref('1')
 
 <template>
   <header class="topnav">
+    <div class="logo">
+        <svg-icon name="logo顶部"/>
+      </div>
     <div class="content">
-      <div class="logo">Logo</div>
+     
       <div class="menu">
         <el-menu 
         :default-active="activeIndex" 
         class="el-menu" 
         mode="horizontal"
         background-color="transparent" 
-        text-color="#fff" 
+        text-color="#fff"
         active-text-color="#fff" 
         style="border: none;"
         :ellipsis="false"
@@ -35,26 +38,27 @@ const activeIndex = ref('1')
 .topnav {
   height: 80px;
   color: white;
-  display: flex;
+  // display: flex;
   background-color: transparent;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
+  // justify-content: center;
+  // align-items: center;
+  // z-index: 1000;
+  position: relative;
+  >.logo {
+      margin-top: 24px;
+      border: 1px solid black; 
+      position: absolute;
+      left: 350px;
+    }
   >.content {
     display: flex;
     flex-direction: row;
     border: 1px solid black;
     justify-content: center;
     align-items: center;
-
-    >.logo {
-      float: left;
-      margin-top: 24px;
-      border: 1px solid black;
-
-    }
-    
     >.menu{
+      margin-left: 30px;
+      margin-top: 10px;
     }
   }
 
@@ -68,5 +72,10 @@ const activeIndex = ref('1')
 }
 .el-menu--horizontal.el-menu {
   border: none;
+}
+.el-menu-item {
+  font-size: 18px;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
 }
 </style>
