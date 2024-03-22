@@ -142,8 +142,8 @@
 <style lang="scss" scoped>
 .main {
   > .page {
-    height: 980px;
-    width: 1920px;
+    height: 51vw;
+    //width: 100vw;
     text-align: center;
     margin-top: -90px;
     margin-bottom: 90px;

@@ -5,12 +5,12 @@
     <div class="page page1">
       <div class="content-one">
         <div class="content-left">
-          <h1>关于我们</h1>
+          <h1>公司简介</h1>
         </div>
         <div class="content-right">
           <div class="content-right-item">
             <div class="logo-and-head">
-              <svg-icon name="公司成立" />
+              <svg-icon name="ab公司成立" />
               <h3>公司成立</h3>
             </div>
             <p>
@@ -20,7 +20,7 @@
           </div>
           <div class="content-right-item">
             <div class="logo-and-head">
-              <svg-icon name="公司创新" />
+              <svg-icon name="ab公司创新" />
               <h3>公司创新</h3>
             </div>
             <p>
@@ -30,7 +30,7 @@
           </div>
           <div class="content-right-item">
             <div class="logo-and-head">
-              <svg-icon name="科技智能" />
+              <svg-icon name="ab科技智能" />
               <h3>科技智能</h3>
             </div>
             <p>
@@ -54,21 +54,21 @@
           <div class="bottom-left"></div>
           <div class="bottom-right">
             <div class="bottom-right-item">
-              <svg-icon name="我们的愿景" />
+              <svg-icon name="ab我们的愿景" />
               <div>
                 <h3>我们的愿景</h3>
                 <p>AI生成硬件领导者AI生成硬件领导者AI生成</p>
               </div>
             </div>
             <div class="bottom-right-item">
-              <svg-icon name="我们的使命" />
+              <svg-icon name="ab我们的使命" />
               <div>
                 <h3>我们的使命</h3>
                 <p>重新定义电子方案设计</p>
               </div>
             </div>
             <div class="bottom-right-item">
-              <svg-icon name="我们的价值观" />
+              <svg-icon name="ab我们的价值观" />
               <div>
                 <h3>我们的价值观</h3>
                 <p>客户优先、成就员工、诚信守诺、守正出奇</p>
@@ -78,30 +78,65 @@
         </div>
       </div>
     </div>
-  <div class="page page3">
-  <div class="page3-content">
-    <div class="top-left">
-
+    <div class="page page3">
+      <div class="page3-content">
+        <div class="top">
+          <h1>资质荣誉</h1>
+          <p>
+            快速实现人工智能技术生成硬件产品的创新路径，通过科技创新和高效生产方式，推动<br />产业的升级，实现更智能、可持续的生产生态，为未来产业发展创造全新的生产动能。
+          </p>
+        </div>
+        <div class="bottom">
+          <div class="bottom-left">
+            <div class="bottom-left-content">
+              <h5>1、国家高新科技企业</h5>
+              <h5>2、北京专精特新中小企业</h5>
+              <h5>3、北京股权交易中心挂牌企业</h5>
+            </div>
+          </div>
+          <div class="bottom-right">
+            <div class="right-top">
+              <div>
+                <h1>2</h1>
+                <p>研发中心</p>
+              </div>
+              <div>
+                <h1>2</h1>
+                <p>生产基地</p>
+              </div>
+            </div>
+            <div class="right-bottom">
+              <div>
+                <h1>80+</h1>
+                <p>产品研发人才</p>
+              </div>
+              <div>
+                <h1>15</h1>
+                <p>研发经验</p>
+              </div>
+              <div>
+                <h1>100+</h1>
+                <p>知识产权专利</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="top-right">
+    <div class="page page4">
+      <div class="page4-content">
+        <h1>社会责任</h1>
+        <p>通过不断创新和可持续经营，为社会创造价值，推动科技发展，促进社会进步。我们将以诚实守信的态度，积<br/>极参与社会事务，关注环境可持续性，努力实现社会责任的最大化。</p>
 
-    </div>
-    <div class="bottom-left">
-
-    </div>
-    <div class="bottom-right">
-
-    </div>
-  </div></div>
-  <div class="page page4">内容4</div>
+    </div></div>
   </div>
 </template>
 
 <style lang="scss" scoped>
 .main {
   > .page {
-    height: 980px;
-    width: 1920px;
+    height: 51vw;
+    //width: 100vw;
     text-align: center;
     margin-top: -90px;
     margin-bottom: 90px;
@@ -232,12 +267,55 @@
       background-image: url("@/assets/img/about/第三屏.png");
       background-size: 100% 100%;
       height: 900px;
-      display: grid;
-      place-items: center;
-      >.page3-content{
-        height: 500px;
-        width: 500px;
-        background-color: aliceblue;
+      width: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+      > .page3-content {
+        height: 75%;
+        width: 70%;
+        // border: 2px solid white;
+        > .top,
+        .bottom {
+          text-align: left;
+        }
+        > .bottom {
+          display: flex;
+          justify-content: space-between;
+          //align-items: flex-end;
+          // border: 3px solid red;
+          margin-top: 145px;
+          height: 400px;
+          > .bottom-left {
+            //margin-top: 400px;
+            // border: 1px solid blue;
+            width: 300px;
+            position: relative;
+            > .bottom-left-content {
+              position: absolute;
+              bottom: 0;
+            }
+          }
+          > .bottom-right {
+            // border: 1px solid green;
+            display: flex;
+            flex-direction: column;
+            > .right-top,
+            .right-bottom {
+              display: flex;
+              flex-direction: row;
+              margin-top:10px;
+              > div {
+                // border: 3px solid white;
+                width: 200px;
+                height: 100%;
+                margin-top: 40px;
+                font-size: 20px;
+              }
+            }
+          }
+        }
       }
     }
 
@@ -245,6 +323,13 @@
       background-image: url("@/assets/img/about/第四屏.png");
       background-size: 100% 100%;
       height: 900px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      >.page4-content{
+        margin-top: -400px;
+      }
+      
     }
   }
 }

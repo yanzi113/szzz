@@ -49,21 +49,22 @@
 
 <style lang="scss" scoped>
 .footer {
-  margin-top: -90px;
+  margin-top: -100px;
   background-color: rgb(14, 30, 50);
-  color: #fff;
+  // color: #fff;
   padding: 40px 0;
-  width: 1920px;
-  height: 440px;
-
+  //width: 100vw;
+  height: 23vw;
+  // border: 3px solid yellow;
   > .container {
     position: relative;
     width: auto;
     height: 300px;
+    // border: 2px solid blue;
     > .logo-section {
       width: 182px;
       height: 38px;
-      border: 2px solid #fff;
+      // border: 2px solid #fff;
     }
     > .footer-columns {
       position: absolute;
@@ -73,10 +74,13 @@
       justify-content: space-between;
       gap: 100px; /* 设置相邻元素之间的间距为10px */
       width: auto;
-      height: auto;
+      height: 250px;
+      // border: 1px solid red;
       align-items: center;
       > .footer-column {
         // margin-right: 40px;
+        // border: 1px solid rgb(61, 0, 0);
+        height: 100%;
         > h4 {
           font-size: 24px;
           line-height: 36px;
@@ -84,6 +88,7 @@
         > ul li {
           font-size: 16px;
           line-height: 24px;
+          // border: 2px solid black;
         }
       }
 
